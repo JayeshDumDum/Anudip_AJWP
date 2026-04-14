@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Add Reminder</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="reminder-form">
+    <h2>⏰ Add Reminder</h2>
+    <p>Never forget important moments</p>
+
+    <form id="reminderForm">
+        <input 
+            type="text" 
+            id="reminderText" 
+            placeholder="What should I remind you about?" 
+            required
+        >
+
+        <input 
+            type="datetime-local" 
+            id="reminderTime" 
+            required
+        >
+
+        <button type="submit">Save Reminder</button>
+    </form>
+
+    <p id="reminderMsg"></p>
+</div>
+
+<script src="js/reminder.js"></script>
+</body>
+</html>
+
+
+

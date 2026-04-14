@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My Journal</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="journal-page">
+
+<div class="notebook">
+  <h1 class="title">My Journal</h1>
+
+  <textarea id="journalText" placeholder="Write freely..."></textarea>
+
+  <div class="journal-actions">
+    <button id="saveBtn" type="button">Save Journal</button>
+    <button id="historyBtn" type="button">History</button>
+  </div>
+</div>
+
+<!-- HISTORY OVERLAY -->
+<div id="historyPanel" class="history hidden">
+  <div class="history-sheet">
+    <button id="closeHistory" type="button" class="close-history">✕</button>
+
+    <h3>Past Entries</h3>
+    <ul id="historyList"></ul>
+  </div>
+</div>
+
+<script src="js/app.js"></script>
+</body>
+</html>
